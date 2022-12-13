@@ -1,0 +1,317 @@
+@import 'Colors';
+
+
+/**************************************/
+/*************Light Mode***************/
+/**************************************/
+@media(prefers-color-scheme: light){
+    .homeContainerWeb{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        margin-left: 5vw;
+    }
+    
+    .homeContainerMob{
+        display: none;
+    }
+    
+    .homeTitleH1{
+        font-size: 50pt;
+        color: $FirstText;
+        margin: 0;
+    }
+    
+    .homeTitleH3{
+        font-size: 30pt;
+        color: $SecondText;
+        margin: 0;
+    }
+    
+    .contact{
+        display: flex;
+        flex-direction: "row";
+        align-items: center;
+    }
+    
+    .iconContact{
+        width: 2vw; 
+        height: auto; 
+        resize: contain;
+        margin-right: 3vw;
+        margin-top: 2vh;
+    }
+    
+    .mail{
+        margin-left: 1vw;
+    }
+    
+    .scanContainer{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3vh;
+    }
+    
+    .infoScan{
+        margin: 0;
+        font-size: 14pt;
+        color: $FirstText;
+    }
+    
+    .marginElement{
+        margin-bottom: 1vh;
+    }
+    
+    .expoGo{
+        font-weight: bolder;
+        color: $BrightNavyBlue;
+    }
+    
+    .imgQR{
+        width: 15vw;
+        height: auto;
+    }
+    
+    .btnPortfolio {
+      background-color: $ShadowBlue;
+      border-radius: 8px;
+      border-style: none;
+      box-sizing: border-box;
+      cursor: pointer;
+      display: inline-block;
+      width: 15vw;
+      height: 6vh;
+      padding: 10px 16px;
+      text-align: center;
+      transition: color 100ms;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      margin: 3vh 0vw;
+    }
+    
+    .btnPortfolio:hover,
+    .btnPortfolio:focus {
+      background-color: $BrightNavyBlue;
+    }
+    
+    .linkPortfolio{
+        color: white;
+        text-decoration: none;
+        font-size: 16pt;
+    }
+    
+    @media screen and (max-width: 768px) {
+    
+        .homeContainerMob{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+            margin-left: 5vw;
+        }
+        
+        .homeContainerWeb{
+            display: none;
+        }
+    
+        .homeTitleH1{
+            font-size: 35pt;
+        }
+    
+        .lastName, .developerMob{
+            margin-bottom: 2vh;
+        }
+    
+        .homeTitleH3{
+            font-size: 18pt;
+        }
+    
+        .iconContact{
+            width: 8vw; 
+            margin-right: 10vw;
+        }
+    
+        .mail{
+            margin-left: 4vw;
+        }
+    
+        .scanMobile{
+            background-color: $BackgroundColorOpacity;
+            width: 80%;
+            padding: 1vh 5vw;
+        }
+    
+        .btnPortfolio {
+            width: 50vw;
+            height: 6vh;
+        }
+    
+        .linkPortfolio{
+            font-size: 14pt;
+        }
+        
+    }
+
+}
+
+
+
+
+
+/**************************************/
+/**************Dark Mode***************/
+/**************************************/
+@media(prefers-color-scheme: dark){
+    .homeContainerWeb{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        margin-left: 5vw;
+    }
+    
+    .homeContainerMob{
+        display: none;
+    }
+    
+    .homeTitleH1{
+        font-size: 50pt;
+        color: $FirstTextDark;
+        margin: 0;
+    }
+    
+    .homeTitleH3{
+        font-size: 30pt;
+        color: $SecondTextDark;
+        margin: 0;
+    }
+    
+    .contact{
+        display: flex;
+        flex-direction: "row";
+        align-items: center;
+    }
+    
+    .iconContact{
+        width: 2vw; 
+        height: auto; 
+        resize: contain;
+        margin-right: 3vw;
+        margin-top: 2vh;
+    }
+    
+    .mail{
+        margin-left: 1vw;
+    }
+    
+    .scanContainer{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3vh;
+    }
+    
+    .infoScan{
+        margin: 0;
+        font-size: 14pt;
+        color: $FirstTextDark;
+    }
+    
+    .marginElement{
+        margin-bottom: 1vh;
+    }
+    
+    .expoGo{
+        font-weight: bolder;
+        color: $BrightNavyBlue;
+    }
+    
+    .imgQR{
+        width: 15vw;
+        height: auto;
+    }
+    
+    .btnPortfolio {
+      background-color: $ShadowBlue;
+      border-radius: 8px;
+      border-style: none;
+      box-sizing: border-box;
+      cursor: pointer;
+      display: inline-block;
+      width: 15vw;
+      height: 6vh;
+      padding: 10px 16px;
+      text-align: center;
+      transition: color 100ms;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      margin: 3vh 0vw;
+    }
+    
+    .btnPortfolio:hover,
+    .btnPortfolio:focus {
+      background-color: $BrightNavyBlue;
+    }
+    
+    .linkPortfolio{
+        color: white;
+        text-decoration: none;
+        font-size: 16pt;
+    }
+    
+    @media screen and (max-width: 768px) {
+    
+        .homeContainerMob{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+            margin-left: 5vw;
+        }
+        
+        .homeContainerWeb{
+            display: none;
+        }
+    
+        .homeTitleH1{
+            font-size: 35pt;
+        }
+    
+        .lastName, .developerMob{
+            margin-bottom: 2vh;
+        }
+    
+        .homeTitleH3{
+            font-size: 18pt;
+        }
+    
+        .iconContact{
+            width: 8vw; 
+            margin-right: 10vw;
+        }
+    
+        .mail{
+            margin-left: 4vw;
+        }
+    
+        .scanMobile{
+            background-color: $BackgroundColorDarkOpacity;
+            width: 80%;
+            padding: 1vh 5vw;
+        }
+    
+        .btnPortfolio {
+            width: 50vw;
+            height: 6vh;
+        }
+    
+        .linkPortfolio{
+            font-size: 14pt;
+        }
+        
+    }
+
+}
+
