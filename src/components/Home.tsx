@@ -5,7 +5,7 @@ import mailL from '../assets/mail_light.png';
 import LinkedInD from '../assets/linkedIn_dark.png';
 import githubD from '../assets/github_dark.png';
 import mailD from '../assets/mail_dark.png';
-import expo from '../assets/expo-go.svg';
+import expoQR from '../assets/expo-qr.svg';
 import { useThemeDetector } from './DarkTheme';
 
 export default function Home(){
@@ -26,7 +26,7 @@ export default function Home(){
                 <div className="scanContainer">
                     <p className='infoScan' >Scan QR-code with your phone</p>
                     <p className='infoScan marginElement'>Make sure you have <span className='expoGo'>Expo Go</span> installed</p>
-                    <img className='imgQR' src={expo} alt="expo-qr" />
+                    <img className='imgQR' src={expoQR} alt="expo-qr" />
                 </div>
             </div>
 
